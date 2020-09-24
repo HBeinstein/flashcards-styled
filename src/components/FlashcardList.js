@@ -14,15 +14,21 @@ function FlashcardList(props){
   if(isLoaded(flashcards)) {
     return (
       <React.Fragment>
+        <div className="flashcard-grid-layout">
         {flashcards.map((flashcard) => {
-          return <Flashcard
+          return <div className='flashcard'>
+            <Flashcard
           whenDetailsClicked = {props.onFlashcardSelection}
           term={flashcard.term}
           definition={flashcard.definition}
           id={flashcard.id}
           key={flashcard.id}/>
+          </div>
         })}
-        <button onClick={props.onAddFlashcardClick}>Add Flashcard</button>
+        </div>
+        <div className='footer'>
+          <button onClick={props.onAddFlashcardClick}>Add Flashcard</button>
+        </div>
       </React.Fragment>
     );
   } else {

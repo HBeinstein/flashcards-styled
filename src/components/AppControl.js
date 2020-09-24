@@ -7,6 +7,9 @@ import Header from './Header';
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { withFirestore, isLoaded } from 'react-redux-firebase'
+import '../styles/index.css';
+import '../styles/main-content.css';
+import '../styles/footer.css';
 
 class AppControl extends React.Component {
 
@@ -60,7 +63,9 @@ class AppControl extends React.Component {
       if (!isLoaded(auth)) {
         return (
           <React.Fragment>
+          <div class="app-control">
             <h1>Loading...</h1>
+          </div>
           </React.Fragment>
         )
       }
@@ -68,7 +73,9 @@ class AppControl extends React.Component {
         return (
           <React.Fragment>
             <Header /> 
-            <h1>You must be signed in to access the queue.</h1>
+            <div class="app-control">
+              <h4>You must be signed in to access the queue.</h4>
+            </div>
           </React.Fragment>
         )
       } 
@@ -88,7 +95,9 @@ class AppControl extends React.Component {
         return (
           <React.Fragment>
             <Header /> 
-            {currentlyVisibleState}
+            <div class="app-control">
+              {currentlyVisibleState}
+            </div>
           </React.Fragment>
         );
       }

@@ -6,12 +6,12 @@ function FlashcardDetails(props) {
 
   return (
     <React.Fragment>
-      <h1>Flashcard Details</h1>
+      <h2>Flashcard Details</h2>
       <h3>{flashcard.term}</h3>
       <p>{flashcard.definition}</p>
       <button onClick={ props.onClickingEdit }>Edit Flashcard</button> 
       <button onClick={()=> onClickingDelete(flashcard.id) }>Delete Flashcard</button>
-      <hr/>
+      {/* <hr/> */}
     </React.Fragment>
   );
 }

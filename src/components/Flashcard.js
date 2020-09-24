@@ -7,11 +7,13 @@ function Flashcard(props){
 
   return (
     <React.Fragment>
-      <div onClick = {() => setHidden(!hidden)}>
-        <h3>{props.term}</h3>
-        {hidden ? <h4></h4> : <h4>{props.definition}</h4> }
+      <div>
+        <div onClick = {() => setHidden(!hidden)}>
+          <h3>{props.term}</h3>
+          {hidden ? <h4></h4> : <h4>{props.definition}</h4> }
+        </div>
+        <p><button onClick = {() => props.whenDetailsClicked(props.id)}>Details</button></p>
       </div>
-      <button onClick = {() => props.whenDetailsClicked(props.id)}>Details</button>
     </React.Fragment>
   );
 }

@@ -1,0 +1,45 @@
+.app-control {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+button p:hover{
+  opacity: 60%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .flashcard-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+} */
+
+.flashcard-grid-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30vh 30vh 30vh 30vh;
+  width: 100vw;
+  height: 75vh;
+  overflow: scroll; 
+  background-color: #e6e6e6;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.flashcard-grid-layout button{
+  align-self: flex-end;
+}
+
+.flashcard {
+  border: 2px solid #005450;
+  margin: 1em;
+  border-radius: 1em;
+  padding: 1em;
+}
