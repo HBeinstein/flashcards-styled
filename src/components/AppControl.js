@@ -74,7 +74,7 @@ class AppControl extends React.Component {
           <React.Fragment>
             <Header /> 
             <div class="app-control">
-              <h4>You must be signed in to access the queue.</h4>
+              <h2>You must be signed in to access the queue.</h2>
             </div>
           </React.Fragment>
         )
@@ -95,7 +95,7 @@ class AppControl extends React.Component {
         return (
           <React.Fragment>
             <Header /> 
-            <div class="app-control">
+            <div className="app-control">
               {currentlyVisibleState}
             </div>
           </React.Fragment>

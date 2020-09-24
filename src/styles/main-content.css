@@ -21,7 +21,7 @@ a {
 .flashcard-grid-layout{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30vh 30vh 30vh 30vh;
+  grid-template-rows: 45vh 45vh 45vh 45vh 45vh 45vh;
   width: 100vw;
   height: 75vh;
   overflow: scroll; 
@@ -38,8 +38,15 @@ a {
 }
 
 .flashcard {
-  border: 2px solid #005450;
+  /* border: 2px solid #005450; */
+  display: flex;
   margin: 1em;
-  border-radius: 1em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: .6em;
   padding: 1em;
+  /* word-wrap: break-word; */
+}
+
+.flashcard button {
+  align-self: flex-end;
 }

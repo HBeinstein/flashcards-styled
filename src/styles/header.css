@@ -1,7 +1,3 @@
-* {
-  white-space: nowrap;
-}
-
 .header-grid-layout {
   display: grid;
   grid-template-columns: 80% 1fr 1fr;
