@@ -36,7 +36,7 @@ function Header(){
     <React.Fragment>
       <div className="header-grid-layout">
         <h1>The Flash</h1>
-        <p><button><Link to="/home">Home</Link></button></p>
+        <p><button><Link to="/">Home</Link></button></p>
         <p><button>{currentlyVisibleLink}</button></p>
       </div>
       {/* <hr/> */}

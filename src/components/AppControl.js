@@ -73,7 +73,7 @@ class AppControl extends React.Component {
         return (
           <React.Fragment>
             <Header /> 
-            <div className="app-control">
+            <div className="landing-pg-control">
               <h1 className="landing-pg">Welcome to The Flash!</h1>
                 <p className="landing-pg">Make flashcards and study for your technical interview!</p>
               <br/>

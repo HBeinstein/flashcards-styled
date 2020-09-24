@@ -23,7 +23,7 @@ const Signin = ({history}) => {  // history is a key router term!
     const email = event.target.signinEmail.value;
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-      history.push('/home')
+      history.push('/')
     }).catch(function(error) {
       alert(error.message) 
     });
