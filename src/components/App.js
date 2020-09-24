@@ -16,7 +16,7 @@ function App(){
           <Route path='/logout'>
               <Logout />
           </Route>
-          <Route path='/'>
+          <Route path='/home'>
               <AppControl />
           </Route>
         </Switch>

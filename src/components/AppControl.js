@@ -73,8 +73,11 @@ class AppControl extends React.Component {
         return (
           <React.Fragment>
             <Header /> 
-            <div class="app-control">
-              <h2>You must be signed in to access the queue.</h2>
+            <div className="app-control">
+              <h1 className="landing-pg">Welcome to The Flash!</h1>
+                <p className="landing-pg">Make flashcards and study for your technical interview!</p>
+              <br/>
+              <h3 className="landing-pg">Please Sign in or Sign Up to view the flashcard queue.</h3>
             </div>
           </React.Fragment>
         )

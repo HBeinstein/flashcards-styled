@@ -1,6 +1,7 @@
 import React from "react";
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
+// import Header from './Header';
 import { useFirestore } from 'react-redux-firebase';
 
 function EditFlashcardForm (props) {
@@ -21,6 +22,7 @@ function EditFlashcardForm (props) {
 
   return (
     <React.Fragment>
+      {/* <Header /> */}
       <ReusableForm
         formSubmissionHandler = {handleEditFlashcardFormSubmission}
         buttonText = "Update Flashcard" />
