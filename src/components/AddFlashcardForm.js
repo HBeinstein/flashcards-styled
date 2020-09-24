@@ -20,9 +20,11 @@ function AddFlashcardForm (props) {
 
   return (
     <React.Fragment>
+      <div className='form-styles-container'>
       <ReusableForm
         formSubmissionHandler = {addFlashcardToFirestore}
         buttonText = "Add Flashcard" />
+      </div>
     </React.Fragment>
   );
 }
